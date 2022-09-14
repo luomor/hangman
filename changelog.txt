@@ -1,2 +1,3 @@
 2022-09-14
 1. add hangman
+2. add Hangman.py
