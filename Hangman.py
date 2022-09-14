@@ -24,6 +24,8 @@ def guess_next_letter(pattern='', used_letters=[], word_list=[]):
         pos = 0  # for the position of word
         matched = True  # whether totally matched with pattern
         for ch in pattern:
+            print("ch:" + ch)
+            print("word[pos]:" + word[pos])
             if ch != '_' and ch != word[pos]:
                 matched = False
                 break
@@ -36,13 +38,18 @@ def guess_next_letter(pattern='', used_letters=[], word_list=[]):
 
             pos += 1
 
+        print(temp_letters_dict)
         # the word is matched with pattern,
         # putting possible letters into the dict and increasing the count for each letter,
         # and the letter with max count will be the possible letter.
         if matched:
             for key in temp_letters_dict:
+                print("key:" + key)
+                # a b u o
                 possible_letters_dict.setdefault(key, 0)
                 possible_letters_dict[key] += temp_letters_dict[key]
+                print(possible_letters_dict)
+                print(max_count)
                 if possible_letters_dict[key] > max_count:
                     max_count = possible_letters_dict[key]
                     possible_letter = key
