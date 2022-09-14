@@ -1,2 +1,12 @@
+'c', 'e', 's'
 python Hangman.py
 possible letter is: a
+
+'a', 'e', 's'
+python Hangman.py
+possible letter is:
+
+python Hangman.py
+possible letter is: a
+possible letter is:
+possible letter is:

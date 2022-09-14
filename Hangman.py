@@ -12,7 +12,7 @@ def guess_next_letter(pattern='', used_letters=[], word_list=[]):
 
     possible_letters_dict = {}  # possible letters in the dict
     temp_letters_dict = {}      # temp dict for possible letters
-    p_len = len(pattern)
+    p_len = len(pattern)        # ____t 5
     max_count = 0               # max count for possible letter
     possible_letter = ''        # possible letter
 
@@ -47,7 +47,7 @@ def guess_next_letter(pattern='', used_letters=[], word_list=[]):
                     possible_letter = key
 
         temp_letters_dict.clear()
-    # print("ok,the letter:"+possible_letter)
+    print("ok,the letter:" + possible_letter)
     return possible_letter
 
 
@@ -55,4 +55,10 @@ if __name__ == '__main__':
 
     game_word_list = ['about', 'abound', 'abundant', 'python', 'hangman']
     letter = guess_next_letter(pattern='____t', used_letters=['c', 'e', 's'], word_list=game_word_list)
+    print("possible letter is: %s" % letter)
+
+    letter = guess_next_letter(pattern='____t', used_letters=['a', 'c', 'e', 's'], word_list=game_word_list)
+    print("possible letter is: %s" % letter)
+
+    letter = guess_next_letter(pattern='____t', used_letters=['a', 'b', 'c', 'e', 's'], word_list=game_word_list)
     print("possible letter is: %s" % letter)
