@@ -71,7 +71,7 @@ if __name__ == '__main__':
     letter = guess_next_letter(pattern='ab__t', used_letters=['c', 'e', 's'], word_list=game_word_list)
     print("possible letter is: %s" % letter)
 
-    letter = guess_next_letter(pattern='ab_ut', used_letters=['c', 'e', 's'], word_list=game_word_list)
+    letter = guess_next_letter(pattern='abo_t', used_letters=['c', 'e', 's'], word_list=game_word_list)
     print("possible letter is: %s" % letter)
 
     letter = guess_next_letter(pattern='about', used_letters=['c', 'e', 's'], word_list=game_word_list)
