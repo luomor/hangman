@@ -27,9 +27,11 @@ def guess_next_letter(pattern='', used_letters=[], word_list=[]):
             # print("ch:" + ch)
             # print("word[pos]:" + word[pos])
             if ch != '_' and ch != word[pos]:
+                print("break1")
                 matched = False
                 break
             if ch == '_' and word[pos] in used_letters:  # should not include used letters
+                print("break2")
                 matched = False
                 break
             if ch == '_':
@@ -77,5 +79,5 @@ if __name__ == '__main__':
     letter = guess_next_letter(pattern='about', used_letters=['c', 'e', 's'], word_list=game_word_list)
     print("possible letter is: %s" % letter)
 
-    letter = guess_next_letter(pattern='_______t', used_letters=['a'], word_list=game_word_list)
+    letter = guess_next_letter(pattern='_______t', used_letters=['c'], word_list=game_word_list)
     print("possible letter is: %s" % letter)
