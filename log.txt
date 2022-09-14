@@ -10,3 +10,23 @@ python Hangman.py
 possible letter is: a
 possible letter is:
 possible letter is:
+
+python Hangman.py
+continue word:abound
+continue word:abundant
+continue word:python
+continue word:hangman
+ok,the letter:a
+possible letter is: a
+continue word:abound
+continue word:abundant
+continue word:python
+continue word:hangman
+ok,the letter:
+possible letter is:
+continue word:abound
+continue word:abundant
+continue word:python
+continue word:hangman
+ok,the letter:
+possible letter is:

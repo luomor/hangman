@@ -18,6 +18,7 @@ def guess_next_letter(pattern='', used_letters=[], word_list=[]):
 
     for word in word_list:
         if len(word) != p_len:  # length is not matched with that of pattern
+            print("continue word:" + word)
             continue
 
         pos = 0  # for the position of word
@@ -55,10 +56,4 @@ if __name__ == '__main__':
 
     game_word_list = ['about', 'abound', 'abundant', 'python', 'hangman']
     letter = guess_next_letter(pattern='____t', used_letters=['c', 'e', 's'], word_list=game_word_list)
-    print("possible letter is: %s" % letter)
-
-    letter = guess_next_letter(pattern='____t', used_letters=['a', 'c', 'e', 's'], word_list=game_word_list)
-    print("possible letter is: %s" % letter)
-
-    letter = guess_next_letter(pattern='____t', used_letters=['a', 'b', 'c', 'e', 's'], word_list=game_word_list)
     print("possible letter is: %s" % letter)
