@@ -91,3 +91,38 @@ continue word:python
 continue word:hangman
 ok,the letter:a
 possible letter is: a
+
+python HangmanTest.py
+ch:_
+word[pos]:a
+ch:_
+word[pos]:b
+ch:_
+word[pos]:o
+ch:_
+word[pos]:u
+ch:t
+word[pos]:t
+{'a': 1, 'b': 1, 'u': 1, 'o': 1}
+key:a
+{'a': 1}
+0
+key:b
+{'a': 1, 'b': 1}
+1
+key:u
+{'a': 1, 'b': 1, 'u': 1}
+1
+key:o
+{'a': 1, 'b': 1, 'u': 1, 'o': 1}
+1
+continue word:abound
+continue word:abundant
+continue word:python
+continue word:hangman
+ok, the letter:a
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
