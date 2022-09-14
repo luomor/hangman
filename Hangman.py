@@ -27,11 +27,9 @@ def guess_next_letter(pattern='', used_letters=[], word_list=[]):
             # print("ch:" + ch)
             # print("word[pos]:" + word[pos])
             if ch != '_' and ch != word[pos]:
-                print("break1")
                 matched = False
                 break
             if ch == '_' and word[pos] in used_letters:  # should not include used letters
-                print("break2")
                 matched = False
                 break
             if ch == '_':
