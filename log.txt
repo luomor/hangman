@@ -126,3 +126,26 @@ ok, the letter:a
 Ran 1 test in 0.000s
 
 OK
+
+python Hangman.py
+{'a': 1, 'b': 1, 'u': 1, 'o': 1}
+key:a
+key:b
+key:u
+key:o
+continue word:abound
+continue word:abundant
+continue word:python
+continue word:hangman
+ok, the letter:a
+possible letter is: a
+{'b': 1, 'u': 1, 'o': 1}
+key:b
+key:u
+key:o
+continue word:abound
+continue word:abundant
+continue word:python
+continue word:hangman
+ok, the letter:b
+possible letter is: b

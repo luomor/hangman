@@ -24,8 +24,8 @@ def guess_next_letter(pattern='', used_letters=[], word_list=[]):
         pos = 0  # for the position of word
         matched = True  # whether totally matched with pattern
         for ch in pattern:
-            print("ch:" + ch)
-            print("word[pos]:" + word[pos])
+            # print("ch:" + ch)
+            # print("word[pos]:" + word[pos])
             if ch != '_' and ch != word[pos]:
                 matched = False
                 break
@@ -48,8 +48,8 @@ def guess_next_letter(pattern='', used_letters=[], word_list=[]):
                 # a b u o
                 possible_letters_dict.setdefault(key, 0)
                 possible_letters_dict[key] += temp_letters_dict[key]
-                print(possible_letters_dict)
-                print(max_count)
+                # print(possible_letters_dict)
+                # print(max_count)
                 if possible_letters_dict[key] > max_count:
                     max_count = possible_letters_dict[key]
                     possible_letter = key
@@ -63,4 +63,16 @@ if __name__ == '__main__':
 
     game_word_list = ['about', 'abound', 'abundant', 'python', 'hangman']
     letter = guess_next_letter(pattern='____t', used_letters=['c', 'e', 's'], word_list=game_word_list)
+    print("possible letter is: %s" % letter)
+
+    letter = guess_next_letter(pattern='a___t', used_letters=['c', 'e', 's'], word_list=game_word_list)
+    print("possible letter is: %s" % letter)
+
+    letter = guess_next_letter(pattern='ab__t', used_letters=['c', 'e', 's'], word_list=game_word_list)
+    print("possible letter is: %s" % letter)
+
+    letter = guess_next_letter(pattern='ab_ut', used_letters=['c', 'e', 's'], word_list=game_word_list)
+    print("possible letter is: %s" % letter)
+
+    letter = guess_next_letter(pattern='about', used_letters=['c', 'e', 's'], word_list=game_word_list)
     print("possible letter is: %s" % letter)
