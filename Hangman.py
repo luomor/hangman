@@ -47,7 +47,7 @@ def guess_next_letter(pattern='', used_letters=[], word_list=[]):
         if matched:
             for key in temp_letters_dict:
                 print("key:" + key)
-                # a b u o
+                # a b u o python2 bug
                 possible_letters_dict.setdefault(key, 0)
                 possible_letters_dict[key] += temp_letters_dict[key]
                 # print(possible_letters_dict)
