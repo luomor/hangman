@@ -55,7 +55,7 @@ def guess_next_letter(pattern='', used_letters=[], word_list=[]):
                     possible_letter = key
 
         temp_letters_dict.clear()
-    print("ok,the letter:" + possible_letter)
+    print("ok, the letter:" + possible_letter)
     return possible_letter
 
 
